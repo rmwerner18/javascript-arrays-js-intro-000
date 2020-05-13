@@ -1,0 +1,10 @@
+var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles'];
+var addElementToBeginningOfArray = (array, element) => {return element, ...array};
+var destructivelyAddElementToEndOfArray = (array,element) => {return array.unshift(element)};
+var addElementToEndOfArray = (array, element) => {return [...array, element]};
+var destructivelyAddElementToEndOfArray = (array, element) => {return array.push(element)};
+var accessElementInArray = (array, index) => {return array[index]};
+var destructivelyRemoveElementFromBeginningOfArray = (array) => {console.log(array.shift(); return array};
+var removeElementFromBeginningOfArray = (array) => {return array.slice(1)};
+var destructivelyRemoveElementFromEndOfArray = (array) => {console.log(array.pop(); return array};
+var removeElementFromEndOfArray = (array) => {console.log(array.slice(0, array.length - 1)); return array};
